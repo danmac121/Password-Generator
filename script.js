@@ -18,66 +18,7 @@ let confirmNumber = (confirm("Do you want your password to contain numbers?"))
 let confirmSpecial = (confirm("Do you want your password to contain special characters?"))
 
 function generatePassword(){
-  // if(confirmUpper && confirmLower && confirmNumber && confirmSpecial){
-  //   console.log("PLS");
-  // }
-  // if ( confirmUpper && !confirmLower && confirmNumber && confirmSpecial){
-  //   console.log("kajh");
-  // }
-  // else if (confirmSpecial && confirmUpper){
-  //   console.log("dfb");
-  // }
-  // else if (confirmNumber && confirmSpecial){
-  //   console.log("xfgh");
-  // }
-  // else if (confirmSpecial){
-  //   console.log("ykxyfj");
-  // }
-  // else if (confirmSpecial && confirmUpper){
-  //   console.log("dfb");
-  // }
-
-
-// Quarantine zone for bad code 
-
-
-//   {
-//     builtarray = [...builtarray, ...lowercase];
-//   }
-//   if(confirm("Do you want your password to contain uppercase letters?")){
-//     builtarray = [...builtarray, ...lowercase, ...uppercase]
-//   }
-//   if(confirm("Do you want your password to contain numbers?")){
-//     builtarray = [...builtarray, ...lowercase, ...uppercase, ...numbers]
-//   }
-//   if(confirm("Do you want your password to contain special characters?")){
-//     builtarray = [...builtarray, ...lowercase, ...uppercase, ...numbers, ...special]
-//   }
-//   else if (confirm("Do you want your password to contain uppercase letters?")){
-//     builtarray = [...builtarray, ...uppercase]
-//   }
-//   if(confirm("Do you want your password to contain numbers?")){
-//     builtarray = [...builtarray, ...uppercase, ...numbers]
-//   }
-//   if(confirm("Do you want your password to contain special characters?")){
-//     builtarray = [...builtarray, ...uppercase, ...numbers, ...special]
-//   }
-//   else if (confirm("Do you want your password to contain numbers?")){
-//     builtarray = [...builtarray, ...numbers]
-//   }
-//   if(confirm("Do you want your password to contain special characters?")){
-//     builtarray = [...builtarray, ...numbers, ...special]
-//   }
-//   else if (confirm("Do you want your password to contain special characters?")){
-//     builtarray = [...builtarray, ...special]
-//   }
-
-// end of quarantine 
-
-
-
-// also bad code? thought this would work but it does not
-
+  
 if (confirmUpper){
   builtarray = [...builtarray, ...uppercase]
 console.log(builtarray)
