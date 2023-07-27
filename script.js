@@ -12,13 +12,35 @@ let builtarray = []
 let generatedLetterIndex = Math.floor(Math.random()*lowercase.length);
 // generate num between 0-10 with no decimal
 // Math.floor(Math.random()*10)
-let confirmUpper = (confirm("Do you want your password to contain lowercase letters?"))
-let confirmLower = (confirm("Do you want your password to contain uppercase letters?"))
+let confirmUpper = (confirm("Do you want your password to contain uppercase letters?"))
+let confirmLower = (confirm("Do you want your password to contain lowercase letters?"))
 let confirmNumber = (confirm("Do you want your password to contain numbers?"))
 let confirmSpecial = (confirm("Do you want your password to contain special characters?"))
 
 function generatePassword(){
-//   if(confirm("Do you want your password to contain lowercase letters?"))
+  // if(confirmUpper && confirmLower && confirmNumber && confirmSpecial){
+  //   console.log("PLS");
+  // }
+  // if ( confirmUpper && !confirmLower && confirmNumber && confirmSpecial){
+  //   console.log("kajh");
+  // }
+  // else if (confirmSpecial && confirmUpper){
+  //   console.log("dfb");
+  // }
+  // else if (confirmNumber && confirmSpecial){
+  //   console.log("xfgh");
+  // }
+  // else if (confirmSpecial){
+  //   console.log("ykxyfj");
+  // }
+  // else if (confirmSpecial && confirmUpper){
+  //   console.log("dfb");
+  // }
+
+
+// Quarantine zone for bad code 
+
+
 //   {
 //     builtarray = [...builtarray, ...lowercase];
 //   }
@@ -49,9 +71,34 @@ function generatePassword(){
 //   else if (confirm("Do you want your password to contain special characters?")){
 //     builtarray = [...builtarray, ...special]
 //   }
-  if (confirmLower && confirmUpper && confirmNumber && confirmSpecial)
-  console.log("Breakthrough")
+
+// end of quarantine 
+
+
+
+// also bad code? thought this would work but it does not
+
+if (confirmUpper){
+  builtarray = [...builtarray, ...uppercase]
+console.log(builtarray)
 }
+if (confirmLower){
+  builtarray = [...builtarray, ...lowercase]
+ console.log(builtarray);
+}
+
+if (confirmNumber){
+  builtarray = [...builtarray, ...numbers]
+  console.log(builtarray);
+
+}
+if (confirmSpecial){
+  builtarray = [...builtarray, ...special]
+  console.log(builtarray);
+}
+
+}
+
 generatePassword()
 
 let passwordlength = prompt("Please select a password lenght between 8 and 128 characters.")
