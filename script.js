@@ -11,12 +11,12 @@ let special = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', 
 let builtarray = []
 
 
-let confirmUpper = (confirm("Do you want your password to contain uppercase letters?"))
-let confirmLower = (confirm("Do you want your password to contain lowercase letters?"))
-let confirmNumber = (confirm("Do you want your password to contain numbers?"))
-let confirmSpecial = (confirm("Do you want your password to contain special characters?"))
 
 function generatePassword(){
+  let confirmUpper = (confirm("Do you want your password to contain uppercase letters?"))
+  let confirmLower = (confirm("Do you want your password to contain lowercase letters?"))
+  let confirmNumber = (confirm("Do you want your password to contain numbers?"))
+  let confirmSpecial = (confirm("Do you want your password to contain special characters?"))
   
 if (confirmUpper){
   builtarray = [...builtarray, ...uppercase]
@@ -40,7 +40,7 @@ if (confirmSpecial){
 }
 if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial){
 alert("You must choose at least one character type to be included in your password.")
-
+generatePassword()
 }
 
 let password = "";
