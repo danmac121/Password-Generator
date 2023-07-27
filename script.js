@@ -12,41 +12,47 @@ let builtarray = []
 let generatedLetterIndex = Math.floor(Math.random()*lowercase.length);
 // generate num between 0-10 with no decimal
 // Math.floor(Math.random()*10)
+let confirmUpper = (confirm("Do you want your password to contain lowercase letters?"))
+let confirmLower = (confirm("Do you want your password to contain uppercase letters?"))
+let confirmNumber = (confirm("Do you want your password to contain numbers?"))
+let confirmSpecial = (confirm("Do you want your password to contain special characters?"))
 
 function generatePassword(){
-  if(confirm("Do you want your password to contain lowercase letters?"))
-  {
-    builtarray = [...builtarray, ...lowercase];
-  }
-  if(confirm("Do you want your password to contain uppercase letters?")){
-    builtarray = [...builtarray, ...lowercase, ...uppercase]
-  }
-  if(confirm("Do you want your password to contain numbers?")){
-    builtarray = [...builtarray, ...lowercase, ...uppercase, ...numbers]
-  }
-  if(confirm("Do you want your password to contain special characters?")){
-    builtarray = [...builtarray, ...lowercase, ...uppercase, ...numbers, ...special]
-  }
-  else if (confirm("Do you want your password to contain uppercase letters?")){
-    builtarray = [...builtarray, ...uppercase]
-  }
-  if(confirm("Do you want your password to contain numbers?")){
-    builtarray = [...builtarray, ...uppercase, ...numbers]
-  }
-  if(confirm("Do you want your password to contain special characters?")){
-    builtarray = [...builtarray, ...uppercase, ...numbers, ...special]
-  }
-  else if (confirm("Do you want your password to contain numbers?")){
-    builtarray = [...builtarray, ...numbers]
-  }
-  if(confirm("Do you want your password to contain special characters?")){
-    builtarray = [...builtarray, ...numbers, ...special]
-  }
-  else if (confirm("Do you want your password to contain special characters?")){
-    builtarray = [...builtarray, ...special]
-  }
-  
-
+//   if(confirm("Do you want your password to contain lowercase letters?"))
+//   {
+//     builtarray = [...builtarray, ...lowercase];
+//   }
+//   if(confirm("Do you want your password to contain uppercase letters?")){
+//     builtarray = [...builtarray, ...lowercase, ...uppercase]
+//   }
+//   if(confirm("Do you want your password to contain numbers?")){
+//     builtarray = [...builtarray, ...lowercase, ...uppercase, ...numbers]
+//   }
+//   if(confirm("Do you want your password to contain special characters?")){
+//     builtarray = [...builtarray, ...lowercase, ...uppercase, ...numbers, ...special]
+//   }
+//   else if (confirm("Do you want your password to contain uppercase letters?")){
+//     builtarray = [...builtarray, ...uppercase]
+//   }
+//   if(confirm("Do you want your password to contain numbers?")){
+//     builtarray = [...builtarray, ...uppercase, ...numbers]
+//   }
+//   if(confirm("Do you want your password to contain special characters?")){
+//     builtarray = [...builtarray, ...uppercase, ...numbers, ...special]
+//   }
+//   else if (confirm("Do you want your password to contain numbers?")){
+//     builtarray = [...builtarray, ...numbers]
+//   }
+//   if(confirm("Do you want your password to contain special characters?")){
+//     builtarray = [...builtarray, ...numbers, ...special]
+//   }
+//   else if (confirm("Do you want your password to contain special characters?")){
+//     builtarray = [...builtarray, ...special]
+//   }
+  if (confirmLower && confirmUpper && confirmNumber && confirmSpecial)
+  console.log("Breakthrough")
+}
+generatePassword()
 
 let passwordlength = prompt("Please select a password lenght between 8 and 128 characters.")
 for (let i = 0; i < passwordlength; i++) {
@@ -54,9 +60,9 @@ for (let i = 0; i < passwordlength; i++) {
   
   password += "x";
 
-  return "x"
+//   return "x"
 }
-}
+
 
 
 
