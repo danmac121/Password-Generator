@@ -20,22 +20,22 @@ function generatePassword(){
   
 if (confirmUpper){
   builtarray = [...builtarray, ...uppercase]
-  console.log(builtarray);
+  
 
 }
 if (confirmLower){
   builtarray = [...builtarray, ...lowercase]
-  console.log(builtarray);
+  
 }
 
 if (confirmNumber){
   builtarray = [...builtarray, ...numbers]
-  console.log(builtarray);
+  
 
 }
 if (confirmSpecial){
   builtarray = [...builtarray, ...special]
-  console.log(builtarray);
+  
 
 }
 if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial){
@@ -52,7 +52,6 @@ for (let i = 0; i < passwordLength; i++) {
  } 
   return password;
   
-
 
 
 
