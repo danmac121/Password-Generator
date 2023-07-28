@@ -64,7 +64,7 @@ for (let i = 0; i < passwordLength; i++) {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  builtarray = []
   passwordText.value = password;
 }
 
